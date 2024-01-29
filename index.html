@@ -4,6 +4,566 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linkedin Clone</title>
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--font family-->
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
-  <body></body>
+  <body style="background-color: #FAF6F0;">
+
+
+<!--NAVBAR START-->
+    <nav style="background-color: white;" class="navbar navbar-expand-sm bg-body-light fixed">
+         <img class="mobile-brand" src="Adsız tasarım (2).jpg" alt="">
+         <a class="navbar-brand" href="#">
+             <i class="fa-brands fa-linkedin"></i>
+         </a>
+<!--search part start-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          <form action="" class="form-inline">
+            <input type="search" class="form-control search" placeholder="Arama yap" aria-label="search" aria-describedby="addon-wrapping">
+          </form>
+          <span class="mobilVisible-icon">
+            <i class="fa-solid fa-comment-dots"></i>
+          </span>
+<!--search part end-->
+<!--navbar list start-->
+        <div class="navbar middle-part float-end ms-auto" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item pe-2">
+                <i class="fa-solid fa-house i-font "></i>
+               <a class="nav-link t-font" href="#">Ana Sayfa</a>
+            </li>
+
+             <li class="nav-item pe-2">
+                 <i class="fa-solid fa-user-group ms-3 i-font"></i>
+                <a class="nav-link t-font" href="#">Ağım</a>
+             </li>
+
+             <li class="nav-item pe-2">
+                 <i style="margin-left: 30px;" class="fa-solid fa-briefcase i-font"></i>
+                 <a class="nav-link t-font" href="#">İş İlanları</a>
+             </li>
+
+             <li class="nav-item pe-2">
+                 <i style="margin-left: 42px;" class="fa-regular fa-message i-font"></i>
+                <a class="nav-link t-font" href="#">Mesajlaşma</a>
+             </li>
+
+            <li class="nav-item pe-2">
+                <i style="margin-left: 35px;" class="fa-solid fa-bell i-font"></i>
+                <a class="nav-link t-font" href="#">Bildirimler</a>
+            </li>
+
+            <li class="nav-item-last">
+                 <img class="ms-3" style="width: 25px; height: 25px;" src="Adsız tasarım (2).jpg" alt="">
+                <a class="nav-link dropdown-toggle t-font" href="#" role="button"  data-bs-toggle="dropdown" aria-expanded="false">Ben</a>
+            </li>
+
+            <li class="nav-item ps-2">
+              <i class="fas fa-th fa-lg m-3 i-font"></i>
+              <a class="nav-link dropdown-toggle t-font-last" href="#" role="button"  data-bs-toggle="dropdown" aria-expanded="false">İş için</a>
+            </li>
+          </ul>
+        </div>
+    <!--navbar list finish-->
+    </nav> 
+<!--NAVBAR FINISH--> 
+
+ <div class="container main-part">
+     <div class="row mt-3">
+
+    <!--LEFT CARD START-->
+      <div class="col-sm-3 left-part-1">
+        <!--1.part left card start -->
+          <div class="card left-card rounded-0">
+              <div class="bg-part">
+                <img class="rounded-5 mt-4" style="width: 70px; height: 70px; margin-bottom: -25px;" src="Adsız tasarım (2).jpg" alt="">
+              </div>
+
+              <div class="info-part1 border-bottom">
+              <h4 class="leftPart-hover mt-5">Bensu Karabüber</h4>
+              <p>Front End Developer <br>
+              İzmir / İstanbul</p>
+              </div>
+
+              <div class="info-part2 mt-2 border-bottom">
+                <p>Profilinizi kimler görüntüledi 
+                  <span style="color: blue; font-weight: bold;">447</span>
+                </p>
+                <p>Yayınınız için görüntüleme
+                  <span style="color: blue; font-weight: bold;">150</span>
+                </p>
+              </div>
+
+              <div class="mt-3">
+              <p style="float: left;" class="ps-3">
+                <i class="fa-solid fa-bookmark pe-2"></i>Öğelerim
+              </p>
+              </div>
+          </div>
+        <!--1.left card part finish-->
+
+        <!--2.left card part start-->
+            <div class="card mt-2 rounded-0">
+              <h4 class="text-start ms-3 mt-2">Sayfalarım</h4>
+                 <div class="text-start ps-2">
+                  <a href="#" style="font-weight: bold; color: black; text-decoration: none;" class="">
+                    <img class="me-2" style="width: 50px; height: 50px;"  src="Adsız tasarım (2).jpg" alt="">Kablosuz Kedi</a>
+                 </div>
+                   
+                 <div style="margin-top: -13px;margin-left: 65px;" class="text-start mb-2">
+                  <span class="">Sayfa Bildirimleri
+                    <small class="ps-3" style="color: blue; font-weight: bold;">10</small>
+                  </span>
+                 </div>
+            </div>
+        <!--2.left card part finish-->
+        
+        <!--3.left card part start-->
+            <div class="card mt-2 rounded-0">
+              <h5 class="text-start mt-3 ms-3">En Yeni</h5>
+              <ul style="list-style: none;" class="text-start">
+                <li># Kodluyoruz</li>
+                <li># Front-end</li>
+                <li># html</li>
+                <li># css</li>
+                <li># Bootstrap</li>
+                <li style="color: blue; font-weight: bold;">Gruplar</li>
+                <li style="color: blue; font-weight: bold;">Etkinlikler
+                  <i style="float: right; color: black;" class="fa-solid fa-plus pe-4"></i>
+                </li>
+              </ul>  
+                <ul class="text-start border-bottom pb-5" style="list-style: none;">
+                  <li style="color: blue; font-weight: bold;">Takip Edilen Hashtagler</li>
+                  <li># Kodluyoruz</li>
+                  <li># front-end</li>
+                </ul>
+
+                <p style="font-weight: bold;" class="text-center hover">Daha Fazla Keşfet</p>
+                
+
+
+
+              
+            </div>
+        <!--3.left card part finish-->   
+      </div>
+    <!--LEFT CARD END-->
+
+    <!--CENTER PART START-->
+    <div class="col-sm-6 center">
+        <!--gönderi paylaşma kısmı-->
+          <div id="card-remove" class="card rounded-0">
+               <div class="card-share text-start mt-3 ms-2 d-flex">
+              <img class="rounded-5 ms-2 me-3" style="width: 50px; height: 50px;" src="Adsız tasarım (2).jpg" alt="">
+                 <input class="gonderi-input"
+                  type="text"
+                  class="form-control content"
+                  placeholder="Bir gönderi başlat"
+                />
+               </div>
+
+               <div class="icon-list mt-2">
+              <ul class="list-inline text text-start d-flex justify-content-evenly">
+                  <li class="list-inline-item ">
+                    <a href="#" style="text-decoration: none; color: black;">
+                      <i style="color: blue;" class="fa-solid fa-photo-film pe-2"></i> Medya
+                    </a>
+                  </li>
+
+                  <li class="list-inline-item">
+                    <a href="#" style="text-decoration: none; color: black;">
+                      <i style="color: peru;" class="fa-regular fa-calendar-days pe-2"></i> Etkinlik
+                    </a>
+                   </li> 
+                   
+
+                  <li class="list-inline-item">
+                    <a href="#" style="color: black; text-decoration: none;">
+                      <i style="color: orangered;" class="fa-solid fa-pen-to-square pe-2"></i> Yazı yaz
+                    </a>
+                  </li>
+              </ul>
+               </div>
+          </div>
+        
+        <!--post 1-->
+        <div class="card post-part mt-2  rounded-0">
+            <div class="img-info-part d-flex mt-3 ms-3">
+              <img class="rounded-5" style="width: 50px; height: 50px;" src="https://media.licdn.com/dms/image/D4D0BAQFRLcE4se3kiw/company-logo_200_200/0/1704455383443?e=1714608000&v=beta&t=GEx5vmH8r418honm9pRD9bs0Sl970qjBrVEmyaUlc74" alt="">
+                 <a style="text-decoration: none; color: black;" class="person-title ps-2 pt-2">Garanti BBVA Teknoloji  ·  
+                   <small class="text-black-50 ps-1"> 30.000.+</small>
+                 </a>
+            </div> 
+
+            <div class="text-start ms-5">
+              <h6 style="font-size: 14px; justify-content: center; margin-top: -15px;" class="text-black-50 ps-4">BT Hizmetleri ve BT <br id="lower-part"> Danışmanlığı
+                <span class="float-end me-4"  style="color: blue; font-weight: bold; font-size: 14px;"> 
+                  <i style="color: blue; font-weight: bold;" class="fa-solid fa-plus"></i>
+                   Takip Et
+                </span>
+               </h6>
+            </div>  
+          <!---->
+
+          <!--img/paylaşım kısmı-->
+            <div  class="img-caption-part">
+              <p style="text-align: justify; margin: 10px 10px;">
+                Garanti BBVA Teknoloji ve Teftiş Kurulu Agile Koçları olarak ev sahipliğini yaptığımız “Şirketler Arası Agile Koçlar Buluşması"nda farklı sektör ve şirketlerden Agile Koçlarla bir araya geldik.“Agile’ın Geleceği”ni konuştuğumuz etkinliğimize beyin fırtınası atölyesiyle başladık. Moderatörlüğünü ve panelistliğini çalışma arkadaşlarımızın yaptığı oturumda, geleceğe dair fikir paylaşımında bulunduk. <br>
+                <span style="color: blue; font-weight: bold;"> Arzu Tukan Bengü Aslan Elif İnce Hande Tunaboylu Öznur Fidan Ergütd </span>
+              </p>
+              <img class="card-img-top rounded-0" src="https://media.licdn.com/dms/image/D4D22AQFq0GX-t8oICA/feedshare-shrink_800/0/1698924727185?e=1709164800&v=beta&t=Wr2nI8oYy23mh1-XZcoYLiCDv2uEmVTbCjeMQkxfEGE" alt="">
+
+              <div class="like-button">
+                <ul class="list-item text-start border-bottom  py-2">
+                  <li class="list-inline-item  ">
+                    <i style="color: blue;" class="fa-solid fa-thumbs-up"></i>
+                    <i style="color: brown;" class="fa-regular fa-heart"></i>
+                    <i style="color: peru;" class="fa-brands fa-gratipay"></i>
+                  </li>
+                  <span class="text-black-50" style="font-size: 15px;"> 
+                    <span class="d-none d-sm-inline">muhammed ve </span> 67 kişi beğendi</span>
+                  <span style="float: right; font-size: 15px;" class="me-4 text-black-50">53 yorum</span>
+                </ul>
+              </div>
+
+              <div class="card-footerPart">
+                <ul class="list-item d-flex">
+                  <li class="list-inline-item me-3">
+                    <a href="#">
+                      <i class="fa-solid fa-thumbs-up text-black-50 fs-5 pe-1"></i>
+                    </a>Beğen
+                  </li>
+                  <li class="list-inline-item me-3">
+                    <a class="text-center" href="#">
+                      <i class="fa-regular fa-comment text-black-50 fs-5 pe-1"></i>
+                    </a>Yorum yap
+                  </li>
+                  <li class="list-inline-item me-3">
+                    <a href="#">
+                      <i class="fa-solid fa-share text-black-50 fs-5 pe-1"></i>
+                    </a>Paylaş
+                  </li>
+                  <li class="list-inline-item d-none d-sm-inline">
+                    <a href="#">
+                      <i class="fa-solid fa-paper-plane text-black-50 fs-5 pe-1"></i>
+                    </a>Gönder
+                  </li>
+                </ul>
+              </div>
+            </div>
+          <!---->   
+            
+        </div>
+
+       <!--post 2-->
+        <div class="card post-part mt-2 rounded-0">
+          <div class="img-info-part d-flex mt-3 ms-3">
+            <img class="rounded-5" style="width: 50px; height: 50px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0JLXGiHdWvAXx-2Pn45WYSTyjBlv3M7aP56P95OEBhxqlKVxoKRa0QTdO7Dunr-7KNRQ&usqp=CAU" alt="">
+               <a style="text-decoration: none; color: black;" class="person-title ps-2 pt-2">Tıkla Gelsin   ·  
+                 <small class="text-black-50 ps-1"> 1400.+</small>
+               </a>
+          </div> 
+
+          <div class="text-start ms-5">
+            <h6 style=" font-size: 14px; margin-top: -15px;" class="text-black-50 ps-4">Paket Servis Uygulaması
+              <span class="float-end me-4"  style="color: blue; font-weight: bold; font-size: 14px;"> 
+                <i style="color: blue; font-weight: bold;" class="fa-solid fa-plus"></i>
+                 Takip Et
+              </span>
+             </h6>
+          </div>  
+        <!---->
+
+        <!--img/paylaşım kısmı-->
+          <div class="img-caption-part">
+            <p style="text-align: justify; margin: 10px 10px;">
+              Bu kampanyanın lezzetine doyum olmaz! Tıkla Gelsin® Restoranda Hızlı Servis ile verdiğin Whopper® Menü siparişlerinde ikinci Whopper® Menü %50 indirimli! Hemen Burger King®’e gel ikinci Whopper® menüyü %50 indirimle al! 🍔 <br> <span style="color: blue;">#tıklagelsin #burgerking #whoppermenü</span> 
+            </p>
+            <img class="card-img-top rounded-0" src="https://pbs.twimg.com/media/FMIX5K9XEAYTNe1?format=jpg&name=4096x4096" alt="">
+
+            <div class="like-button">
+              <ul class="list-item text-start border-bottom  py-2">
+                <li class="list-inline-item  ">
+                  <i style="color: blue;" class="fa-solid fa-thumbs-up"></i>
+                  <i style="color: brown;" class="fa-regular fa-heart"></i>
+                  <i style="color: peru;" class="fa-brands fa-gratipay"></i>
+                </li>
+                <span class="text-black-50" style="font-size: 15px;">
+                 <span class="d-none d-sm-inline"> Hande ve  </span>
+                  167 kişi beğendi</span>
+                <span style="float: right; font-size: 15px;" class="me-4 text-black-50">86 yorum</span>
+              </ul>
+            </div>
+
+            <div class="card-footerPart">
+              <ul class="list-item d-flex">
+                <li class="list-inline-item me-3">
+                  <a href="#">
+                    <i class="fa-solid fa-thumbs-up text-black-50 fs-5 pe-1"></i>
+                  </a>Beğen
+                </li>
+                <li class="list-inline-item me-3">
+                  <a class="text-center" href="#">
+                    <i class="fa-regular fa-comment text-black-50 fs-5 pe-1"></i>
+                  </a>Yorum yap
+                </li>
+                <li class="list-inline-item me-3">
+                  <a href="#">
+                    <i class="fa-solid fa-share text-black-50 fs-5 pe-1"></i>
+                  </a>Paylaş
+                </li>
+                <li class="list-inline-item me-3 d-none d-sm-inline">
+                  <a href="#">
+                    <i class="fa-solid fa-paper-plane text-black-50 fs-5 pe-1"></i>
+                  </a>Gönder
+                </li>
+              </ul>
+            </div>
+          </div>
+        <!---->   
+          
+        </div>
+
+      <!--post 3-->
+      <div class="card post-part mt-2 rounded-0">
+        <div class="img-info-part d-flex mt-3 ms-3">
+          <img class="rounded-5" style="width: 50px; height: 50px;" src="https://media.licdn.com/dms/image/C4D0BAQGRBHWCcaAqGg/company-logo_200_200/0/1630507197379/nasa_logo?e=1714608000&v=beta&t=XAeTBJlHLam19vElECMBf3zPVY0Re21YV8eUtq-i-6s" alt="">
+             <a style="text-decoration: none; color: black;
+             " class="person-title wordWrap-1 pt-2">NASA - National Aeronautics and Space Administration ·  
+               <small class="text-black-50 ps-1"> 3.+</small>
+             </a>
+        </div> 
+
+        <div class="text-start ms-5 ">
+          <h6 style="font-size: 14px; margin-top: -15px;" class="text-black-50 ps-3">Explore the universe and <br id="lower-part"> discover
+            <span class="float-end me-3"  style="color: blue; font-weight: bold; font-size: 14px;"> 
+              <i style="color: blue; font-weight: bold;" class="fa-solid fa-plus"></i>
+               Takip Et
+            </span>
+          </h6>
+        </div>  
+      <!---->
+
+      <!--img/paylaşım kısmı-->
+        <div class="img-caption-part">
+          <p style="text-align: justify; margin: 10px 10px;">
+            Two new stamps celebrate our James Webb Space Telescope.
+
+            The <span style="color: blue; font-weight: bold;">United States Postal Service </span>  Priority Mail stamps feature two new images of the Cosmic Cliffs and the Pillars of Creation to honor Webb's achievements as it explores the wonders of the cosmos. <span style="color: blue;"> https://lnkd.in/eJ8pMgB2 </span>
+          </p>
+          <img class="card-img-top rounded-0" src="https://science.nasa.gov/wp-content/uploads/2024/01/pillars-of-creation.jpg?w=1280&format=webp" alt="">
+
+          <div class="like-button">
+            <ul class="list-item text-start border-bottom  py-2">
+              <li class="list-inline-item">
+                <i style="color: blue;" class="fa-solid fa-thumbs-up"></i>
+                <i style="color: brown;" class="fa-regular fa-heart"></i>
+                <i style="color: peru;" class="fa-brands fa-gratipay"></i>
+              </li>
+              <span class="text-black-50" style="font-size: 15px;">
+                <span class="d-none d-sm-inline"> Ferhan ve</span>
+                 3489 kişi beğendi</span>
+              <span style="float: right; font-size: 15px;" class="me-4 text-black-50">169 yorum</span>
+            </ul>
+          </div>
+
+          <div class="card-footerPart justify-content-between">
+            <ul class="list-item d-flex">
+              <li class="list-inline-item me-3">
+                <a href="#">
+                  <i class="fa-solid fa-thumbs-up text-black-50 fs-5 pe-1"></i>
+                </a>Beğen
+              </li>
+              <li class="list-inline-item me-3">
+                <a class="text-center" href="#">
+                  <i class="fa-regular fa-comment text-black-50 fs-5 pe-1"></i>
+                </a>Yorum yap
+              </li>
+              <li class="list-inline-item me-3">
+                <a href="#">
+                  <i class="fa-solid fa-share text-black-50 fs-5 pe-1"></i>
+                </a>Paylaş
+              </li>
+              <li class="list-inline-item me-3 d-none d-sm-inline">
+                <a href="#">
+                  <i class="fa-solid fa-paper-plane text-black-50 fs-5 pe-1"></i>
+                </a>Gönder
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!---->    
+      </div>
+  </div>
+    <!--CENTER PART END-->
+
+    <!--RIGHT PART START-->
+         <div class="col-sm-3 right-part d-none d-sm-block">
+            <!--1.card-->
+            <div class="card rounded-0">
+                  <div class="text-start mt-3">
+                    <span class="mt-3 text-start ms-3 fw-medium text-black-50">Akışınıza Ekleyin</span>
+                    <span><i style="float: right;" class="fas fa-info-circle text-black-50 me-3"></i></span> 
+                  </div>
+                 <!--1.içerik-->
+                 <div class="text-start ps-2 mb-3 mt-3">
+                  <img class="me-2 rounded-circle" style="width: 50px;
+                  height: 50px;
+                  border: 1px solid red;" src="/içerik1.png" alt="">
+                  <a href="#" style="font-weight: bold; color: black; text-decoration: none;" class=" hover ">
+                    Codefaster
+                  </a>
+                  <a class="rightBtn-hover ms-4 rounded-pill float-end me-3">Takip Et
+                    <i class="fa-solid fa-plus float-start mt-1 me-1"></i>
+                  </a>
+                 </div>
+                <!--2.içerik-->
+                 <div class="text-start ps-2 mb-3 mb-3">
+                  <a href="#" style="font-weight: bold; color: black; text-decoration: none;" class=" hover ">
+                    <img class="me-2 rounded-circle " style="width: 50px;
+                    height: 50px;
+                    border: 1px solid red;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe28EiZRNxrgCHzLF6ftsX1nSpKLIlzS1HLf5xcTnAc7y3hwQLhnF1CKLVr3tVE7-7SjY&usqp=CAU/" alt="">WeCode
+                  </a>
+                  <a class="rightBtn-hover ms-4 rounded-pill float-end me-3">Takip Et
+                    <i class="fa-solid fa-plus float-start mt-1 me-1"></i>
+                  </a>
+                 </div>
+                <!--3.içerik-->
+                 <div class="text-start ps-2 mb-3">
+                  <a href="#" style="font-weight: bold; color: black; text-decoration: none;" class=" hover ">
+                    <img class="me-2 rounded-circle" style="width: 50px; height: 50px;
+                    border: 1px solid red;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXw7_tDNAGQ_uYk_qgkmWoePGAfQc4H0F7pg0VwSAjYuO2Lbx1GFA9DaCFt-DuLa0pIyY&usqp=CAU" alt="">Trendyol
+                  </a>
+                  <a class="rightBtn-hover ms-4 rounded-pill float-end me-3">Takip Et
+                    <i class="fa-solid fa-plus float-start  mt-1 me-1"></i>
+                  </a>
+                 </div>
+                <!--4.içerik-->
+                 <div class="text-start ps-2 mb-3">
+                  <a href="#" style="font-weight: bold; color: black; text-decoration: none;" class=" hover ">
+                    <img class="rounded-circle me-2" style="width: 50px; height: 50px;
+                  border: 1px solid red;"  src="https://btm.istanbul/storage/uploads/news/1852/conversions/Getir-large.jpg" alt="">Getir
+                  </a>
+                  <a  class="rightBtn-hover ms-4 rounded-pill float-end me-3">Takip Et
+                    <i class="fa-solid fa-plus float-start mt-1 me-1"></i>
+                  </a>
+                 </div>
+                 <!--5.içerik-->
+                 <div class="text-start ps-2 mb-3">
+                    <a href="#" style="font-weight: bold; color: black; text-decoration: none;" class=" hover ">
+                      <img class="rounded-circle me-2" style="width: 50px;height: 50px;
+                      border: 1px solid red;"  src="https://media.licdn.com/dms/image/C4D0BAQGt4qnBkvyUsg/company-logo_200_200/0/1660038821011/softitoakademi_logo?e=2147483647&v=beta&t=dvtSn70_2EhcVZNsdwX7v8LeoERgQycd6HTrcmf_L44" alt="">SoftIto
+                    </a>
+                    
+                       <a class="rightBtn-hover ms-4 rounded-pill float-end me-3">Takip Et
+                        <i class="fa-solid fa-plus float-start mt-1 me-1"></i>
+                       </a>
+                  </div>  
+            </div>
+           <!--2.card-->
+            <div class="card mt-2 rounded-0">
+                 <div class="text-start mt-3">
+                   <span class="mt-3 text-start ms-3 fw-medium text-black-50">Bugünün En Çok İzlenen Eğitimleri</span>
+                   <i style="float: right;" class="fas fa-info-circle text-black-50 me-2 mt-1"></i>
+                 </div>
+
+                   <div class="mt-2">
+                     <ul style="margin-left: -15px;" class="text-start">
+                      <li style="list-style: none;" class="fw-medium">1. The Six Morning Habits of High Perf...
+                     </li>
+                     <span class="text-black-50">Pete Mocakatais | How to be awesome at you...</span>
+                
+                     <li style="list-style: none;" class="fw-medium mt-2">2. Onconscious Blas
+                     </li>
+                     <span class="text-black-50">Stacey Gordon</span>
+
+                     <li style="list-style: none;" class="fw-medium mt-2">3. Critical Thinking for Better Judgme...
+                     </li>
+                     <span class="text-black-50"> Becki Saltzman</span>
+                     </ul>
+                   </div>
+
+                     <div class="mb-2">
+                       <a href="">Linkedin Learning'de daha fazlasını göster.</a>
+                     </div>
+             </div>
+          <!--3.card-->
+             <div class="footer-li mt-2">
+              <ul style="list-style: none;" class="list-item me-4">
+                <li class="list-inline-item">
+                  <a href="">Hakkında</a>
+                </li>
+    
+                <li class="list-inline-item">
+                  <a href="">Erişilebilirlik</a>
+                </li>
+    
+                <li class="list-inline-item">
+                  <a href="">Yardım Merkezi</a>
+                </li>
+    
+                <li class="list-inline-item">
+                  <a href="">Gizlilik ve Koşullar</a>
+                </li>
+    
+                <li class="list-inline-item">
+                  <a href="">Reklam Tercihleri</a>
+                </li>
+    
+                <li class="list-inline-item">
+                  <a href="">Reklam</a>
+                </li>
+              </ul>
+
+
+
+             </div>
+           <!--copyright kısmı-->
+             <div class="copyright text-center mt-2">
+              <img style="width: 80px; height: 20px;" src="pngwing.com.png" alt="">
+              <span class="mt-2" style="font-size: 12px;">Linkedin Corporation © 2021</span>
+             </div>
+        </div>
+    <!--RIGHT PART END-->
+    </div>
+</div>
+     <!--MOBILE MENU PART START-->
+    <footer class="mobileMenuBar d-block d-sm-none">
+      <div class="mobile-bar">
+        <ul class="nav mt-2">
+          <li class="nav-item pe-2">
+            <i class="fa-solid fa-house text-black-50"></i>
+            <a style="white-space: nowrap;" class="nav-link text-black-50" aria-current="page" href="#">Ana Sayfa</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-user-group text-black-50"></i>
+            <a class="nav-link text-black-50" href="#">Ağ</a>
+          </li>
+          <li class="nav-item ">
+            <i class="fa-solid fa-square-plus text-black-50"></i>
+            <a class="nav-link text-black-50" href="#">Gönder</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-bell text-black-50"></i>
+            <a class="nav-link text-black-50" href="#">Bildirimler</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-briefcase text-black-50"></i>
+            <a class="nav-link text-black-50" href="#">İş İlanları</a>
+          </li>
+       
+      </div> 
+
+    </footer>
+    <!--MOBILE MENU PART END-->
+
+<scrip src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
